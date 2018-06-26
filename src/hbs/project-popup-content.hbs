@@ -1,0 +1,11 @@
+<div class="b-projects__album-txt-container">
+    {{#if description}}
+        <div class="b-projects__album-txt-container-ttl">{{description.title}}</div>
+        <div class="b-projects__album-txt-container-txt">{{{description.text}}}</div>
+        <ul class="b-projects__album-txt-container-list">
+        {{#each description.list}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    {{/if}}
+</div>

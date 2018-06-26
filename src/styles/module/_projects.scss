@@ -1,0 +1,145 @@
+.b-projects__ttl-block {
+    @include margin-trailer(3);
+}
+
+.b-projects__tabs {
+    @include column(32);
+    
+    @media #{$medium-up} {
+        @include column(26);
+    }
+    
+    @media #{$big-up} {
+        @include column(24);
+    }
+
+    @media #{$large-up} {
+        @include column(14);
+        @include push(21);
+    }
+}
+
+.b-projects__album-overlay {
+    @include prefix(2);
+    @include suffix(2);
+    @include rhythm-padding(2);
+    @include transition(background-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba($gray, .7);
+}
+
+.b-projects__albums-wrap {
+    @include column(36);
+    @include margin-leader(2);
+    @include margin-trailer(4);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$large-up} {
+        @include margin-leader(8);
+        @include margin-trailer(10);
+    }
+}
+
+.b-projects__album {
+    @include column(36);
+    @include margin-trailer(3);
+    position: relative;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    
+    @media #{$medium-up} {
+        @include column(17);
+        @include post(2);
+
+        &:nth-child(2n) {
+            @include post(0);
+        }
+    }
+
+    @media #{$large-up} {
+        @include column(30/4);
+        @include post(2);
+
+        &:nth-child(2n) {
+            @include post(2);
+        }
+
+        &:hover {
+            .b-projects__album-overlay {
+                background-color: rgba($yellow, .7);
+            }
+
+            .b-projects__album-link {
+                color: $gray;
+            }
+
+            img {
+                transform: scale(1.1);
+            }
+
+            .b-projects__album-link svg {
+                fill: $gray;
+            }
+        }
+    }
+
+    img {
+        @include transition(transform);
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:nth-child(4n) {
+        @include post(0);
+    }
+}
+
+.b-projects__album-link {
+    @include transition(color);
+    text-transform: uppercase;
+    font-size: 20px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $lightGray;
+    align-items: center;
+
+    svg {
+        @include transition(fill);
+    }
+}
+
+.b-projects__album-slider {
+    margin: 0 auto;
+    height: 600px;
+    width: 100%;
+}
+
+.b-projects__album-txt-container {
+    @include rhythm-margins(2);
+    color: $lightGray;
+    
+    @media #{$large-up} {
+        @include rhythm-margins(5);
+        @include push(1);
+    }
+}
+
+.b-projects__album-txt-container-ttl {
+    @include margin-trailer(2);
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.b-projects__album-txt-container-list {
+    list-style: circle;
+}

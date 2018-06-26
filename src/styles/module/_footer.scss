@@ -1,0 +1,14 @@
+.b-footer {
+    @include rhythm-padding(3);
+    background-color: $gray;
+
+    @media #{$xlarge-up} {
+        @include rhythm-padding(5);
+    }
+}
+
+.b-footer__inner {
+    @include push(2);
+    @include post(2);
+    color: $lightGray;
+}

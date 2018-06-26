@@ -1,0 +1,41 @@
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+body {
+    font-family: $font;
+    color: $fontColor;
+    text-size-adjust: 100%;
+    width: 100%;
+    background-color: $lightGray;
+    overflow-x: hidden;
+
+    &.is-open {
+        overflow: hidden;
+        position: fixed;
+    }
+}
+
+a {
+    &[href^='tel:'],
+    &[href^='mailto:'] {
+        white-space: nowrap;
+    }
+
+    color: $fontColor;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Utility
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

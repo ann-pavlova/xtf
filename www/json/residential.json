@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Avant-garde",
+    "description": {
+      "title": "Multistory residential complex \"Avant-garde\"",
+      "text": "<p>Residential complex consists of 12 sections of 17-24 levels with underground parking.</p><p>All frames are cast-in-place reinforced concrete. Foundations – slab on piles up to 18m long.</p><p>We are proud to say that XTF is providing management in this project, and our specialists developed a full set of structural documentation: geological engineering and pile field design, foundation slabs, reinforced concrete frames design, etc.</p>",
+      "list": ["1-4 blocks are finished in 2017;", "5-8 blocks are under construct;", "9-12 blocks are under development."]
+    },
+    "preview": "../img/projects/residential/avant-garde-preview.jpg",
+    "images": ["../img/projects/residential/avant-garde/01.jpg", "../img/projects/residential/avant-garde/02.jpg", "../img/projects/residential/avant-garde/04.jpg", "../img/projects/residential/avant-garde/05.jpg", "../img/projects/residential/avant-garde/05.jpg", "../img/projects/residential/avant-garde/06.jpg", "../img/projects/residential/avant-garde/07.jpg", "../img/projects/residential/avant-garde/08.jpg"]
+  },
+  {
+    "name": "Ultra",
+    "description": {
+      "title": "Residential complex \"ULTRA\"",
+      "text": "<p>Residential complex consists of twelve buildings for different purposes: five 26-storey residential buildings, four 7-storey residential buildings, 3-storey fitness center, 3-storey shopping center, underground parking for 388 cars. On the first floor of residential buildings - commercial premises: shops, offices.</p><p>Bearing frame is cast-in-place reinforced concrete. The underground and first two aboveground floors consist of columns, beams and slabs. In the level of the third floor, reinforced concrete bearing walls rest on beams. Foundations – slab on piles up to 18m long.</p><p>We are proud to say that XTF is providing management in this project, and our specialists developed a full set of structural documentation: geological engineering and pile field design, foundation slabs, reinforced concrete frames design, etc.</p>",
+      "list": ["1st stage under construct (about finishing);", "2nd stage under construct;", "3rd stage under development."]
+    },
+    "preview": "../img/projects/residential/ultra-preview.jpg",
+    "images": ["../img/projects/residential/ultra/01.jpg", "../img/projects/residential/ultra/02.jpg", "../img/projects/residential/ultra/04.jpg", "../img/projects/residential/ultra/05.jpg", "../img/projects/residential/ultra/05.jpg", "../img/projects/residential/ultra/06.jpg", "../img/projects/residential/ultra/07.jpg"]
+  },
+  {
+    "name": "Paris",
+    "description": {
+      "title": "Residential complex \"Paris\"",
+      "text": "<p>Residential complex consists of 16 buildings 7-12 levels.</p><p>On the first floor of residential buildings - commercial premises: shops, offices.</p><p>Bearing frame is cast-in-place reinforced concrete. Foundations – slab on piles up to 12m long.</p><p>We are proud to say that XTF is providing management in this project, and our specialists developed a full set of structural documentation: geological engineering and pile field design, foundation slabs, reinforced concrete frames design, etc.</p>",
+      "list": ["1st stage finished in 2017;", "2nd stage under construct."]
+    },
+    "preview": "../img/projects/residential/paris-preview.jpg",
+    "images": ["../img/projects/residential/paris/01.jpg", "../img/projects/residential/paris/02.jpg", "../img/projects/residential/paris/03.jpg", "../img/projects/residential/paris/04.jpg", "../img/projects/residential/paris/05.jpg", "../img/projects/residential/paris/06.jpg", "../img/projects/residential/paris/07.jpg", "../img/projects/residential/paris/08.jpg", "../img/projects/residential/paris/09.jpg", "../img/projects/residential/paris/10.jpg", "../img/projects/residential/paris/11.jpg"]
+  },
+  {
+    "name": "Grand-prix",
+    "description": {
+      "title": "Residential complex \"Grand-Prix\"",
+      "text": "<p>Elite residential and commercial complex consists of five blocks 9 - 23 stories high with 2-storeys underground parking.</p><p>Bearing frame is cast-in-place reinforced concrete. Foundations – slab on piles up to 12m long.</p><p>We are proud to say that XTF is providing management in this project, and our specialists developed a full set of structural documentation: geological engineering and pile field design, foundation slabs, reinforced concrete frames design, etc.</p>",
+      "list": ["Under construct."]
+    },
+    "preview": "../img/projects/residential/grand-prix-preview.jpg",
+    "images": ["../img/projects/residential/grand-prix/01.jpg", "../img/projects/residential/grand-prix/02.jpg", "../img/projects/residential/grand-prix/03.jpg", "../img/projects/residential/grand-prix/04.jpg", "../img/projects/residential/grand-prix/06.jpg", "../img/projects/residential/grand-prix/07.jpg", "../img/projects/residential/grand-prix/08.jpg"]
+  }
+]
+
