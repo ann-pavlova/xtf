@@ -78,7 +78,7 @@ paths.build.scriptsFiles = [paths.buildBase + '/scripts/**/*.js', '!www/scripts/
 paths.build.styles       = paths.buildBase + '/styles';
 paths.build.stylesFiles  = paths.buildBase + '/styles/**/*.css';
 paths.build.hbs          = paths.buildBase + '/hbs';
-paths.build.jade         = paths.buildBase + '/html';
+paths.build.jade         = paths.buildBase;
 paths.build.spriteSvg    = paths.buildBase + '/img/sprite';
 
 paths.html = paths.buildBase + '/**/*.html';
