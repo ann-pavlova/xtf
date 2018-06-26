@@ -279,7 +279,7 @@ gulp.task('pre-commit-notify', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: 'www',
+            baseDir: './',
         },
         port  : 8080,
         open: false
