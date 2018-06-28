@@ -8,14 +8,14 @@
       {"item": "9-12 blocks are under development."}
     ],
     "photos": [
-      {"img": "../img/projects/residential/avant-garde/01.jpg"},
-      {"img": "../img/projects/residential/avant-garde/02.jpg"},
-      {"img": "../img/projects/residential/avant-garde/03.jpg"},
-      {"img": "../img/projects/residential/avant-garde/04.jpg"},
-      {"img": "../img/projects/residential/avant-garde/05.jpg"},
-      {"img": "../img/projects/residential/avant-garde/06.jpg"},
-      {"img": "../img/projects/residential/avant-garde/07.jpg"},
-      {"img": "../img/projects/residential/avant-garde/08.jpg"}
+      {"img": "www/img/projects/residential/avant-garde/01.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/02.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/03.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/04.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/05.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/06.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/07.jpg"},
+      {"img": "www/img/projects/residential/avant-garde/08.jpg"}
     ]
   }
 }

@@ -5,8 +5,8 @@
       "title": "Meat processing factory",
       "text": "<p>Pork processing factory with a capacity of 470 thousand tons per year. The complex consists of 33 buildings of various purposes and sizes. The main building with an area of 14.5 thousand m2 consists of a steel frame with reinforced concrete columns. Administrative buildings are made of reinforced concrete.</p><p>The construction of the plant is completed in 2016.</p><p>XTF developed a full set of structural documentation: geological engineering, foundations design, steel frame, reinforced concrete columns design, all equipment foundations and facade systems design, etc.</p>"
     },
-    "preview": "../img/projects/industrial/meat-preview.jpg",
-    "images": ["../img/projects/industrial/meat/01.jpg", "../img/projects/industrial/meat/02.jpg", "../img/projects/industrial/meat/03.jpg", "../img/projects/industrial/meat/04.jpg", "../img/projects/industrial/meat/05.jpg", "../img/projects/industrial/meat/06.jpg", "../img/projects/industrial/meat/07.jpg", "../img/projects/industrial/meat/08.jpg", "../img/projects/industrial/meat/09.jpg", "../img/projects/industrial/meat/10.jpg", "../img/projects/industrial/meat/11.jpg"]
+    "preview": "www/img/projects/industrial/meat-preview.jpg",
+    "images": ["www/img/projects/industrial/meat/01.jpg", "www/img/projects/industrial/meat/02.jpg", "www/img/projects/industrial/meat/03.jpg", "www/img/projects/industrial/meat/04.jpg", "www/img/projects/industrial/meat/05.jpg", "www/img/projects/industrial/meat/06.jpg", "www/img/projects/industrial/meat/07.jpg", "www/img/projects/industrial/meat/08.jpg", "www/img/projects/industrial/meat/09.jpg", "www/img/projects/industrial/meat/10.jpg", "www/img/projects/industrial/meat/11.jpg"]
   },
   {
     "name": "Warehouse",
@@ -14,8 +14,8 @@
       "title": "Warehouse",
       "text": "<p>Warehouse building for storage of construction tools and building materials 1000 м2, volume 9830 м3. Steel frame and precast wall panels.</p><p>XTF developed a full set of structural and architectural documentation for this.</p><p>Built in 2015.</p>"
     },
-    "preview": "../img/projects/industrial/warehouse-preview.jpg",
-    "images": ["../img/projects/industrial/warehouse/01.jpg", "../img/projects/industrial/warehouse/02.jpg", "../img/projects/industrial/warehouse/03.jpg"]
+    "preview": "www/img/projects/industrial/warehouse-preview.jpg",
+    "images": ["www/img/projects/industrial/warehouse/01.jpg", "www/img/projects/industrial/warehouse/02.jpg", "www/img/projects/industrial/warehouse/03.jpg"]
   }
 ]
 
