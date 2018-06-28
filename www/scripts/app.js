@@ -150,17 +150,18 @@ $(function () {
             type: 'get',
             success: function success(data) {
                 albums = JSON.parse(data);
+                var url = '/xtf/';
 
-                $.get('www/hbs/albums.hbs', function (template) {
+                $.get(url + 'www/hbs/albums.hbs', function (template) {
                     albumsTemplate = Handlebars.compile(template);
                     $('.b-tabs__content').html(albumsTemplate(albums));
                 }, 'html');
 
-                $.get('www/hbs/projects-popup.hbs', function (template) {
+                $.get(url + 'www/hbs/projects-popup.hbs', function (template) {
                     popupTemplate = Handlebars.compile(template);
                 }, 'html');
 
-                $.get('www/hbs/project-popup-content.hbs', function (template) {
+                $.get(url + 'www/hbs/project-popup-content.hbs', function (template) {
                     popupContentTemplate = Handlebars.compile(template);
                 }, 'html');
             }
