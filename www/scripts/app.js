@@ -58,8 +58,9 @@ $(function () {
                 type: 'get',
                 success: function success(data) {
                     albums = JSON.parse(data);
+                    var url = '/xtf/';
 
-                    $.get('../hbs/albums.hbs', function (template) {
+                    $.get(url + 'www/hbs/albums.hbs', function (template) {
                         albumsTemplate = Handlebars.compile(template);
                         $('.b-tabs__content').html(albumsTemplate(albums));
                     }, 'html');
