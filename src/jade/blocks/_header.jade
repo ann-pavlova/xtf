@@ -1,32 +1,50 @@
-.b-header.b-header_type_desk
-    .container
-        .b-header__inner
-            a(href="/").b-header__logo XTF
-            .b-header__menu
-                - var menu = ['about', 'SERVICES', 'Projects', 'Careers', 'Contacts'];
-                ul.b-header__menu-list
-                    for item in menu
-                        if item === "about"
-                            li.b-header__menu-item
-                                a.b-header__menu-link.is-active(href="#")= item
-                        else
-                            li.b-header__menu-item
-                                a.b-header__menu-link(href="#")= item
-            .b-header__phone
-                a(href="tel:+61414084941") +6141 408 49 41
-.b-header.b-header_type_mob
-    .container
-        .b-header__inner
-            a(href="/").b-header__logo XTF
-            .b-header__mobile-menu-wrap
-                .b-header__mobile-menu
-                    - var menu = ['about', 'SERVICES', 'Projects', 'Careers', 'Contacts'];
+include ../mixins/_svg-sprite
+.b-header__wrapper(class=pageHome === true ? "b-header__wrapper_type_home":"")
+    .b-header.b-header_type_desk
+        .container
+            .b-header__inner
+                a(href="index.html").b-header__logo
+                    +svg('logo')
+                .b-header__menu
+                    - var menu = ['about', 'services', 'projects', 'careers', 'contacts'];
                         ul.b-header__menu-list
                             for item in menu
-                                li.b-header__menu-item
-                                    a.b-header__menu-link(href="#")= item
-                .b-header__phone
-                    a(href="tel:+61414084941") +6 141 408 49 41
+                                if item === current
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link.is-active(href="/" + item + ".html")= item
+                                else
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link(href="/" + item + ".html")= item
+                .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
+                    a.b-header__lang(href="/ru/index.html") ru
+                    .b-header__lang-slash /
+                    .b-header__lang.is-active eng
+                .b-header__contact-info
+                    a(href="mailto:xtf@gmail.com") xtf@gmail.com
+                    a(href="tel:+61414084941") +6(141) 408 49 41
+    .b-header.b-header_type_mob
+        .b-header__inner
+            a(href="index.html").b-header__logo
+                +svg('logo')
+            .b-header__mobile-menu-wrap
+                .b-header__mobile-menu
+                    - var menu = ['about', 'services', 'projects', 'careers', 'contacts'];
+                        ul.b-header__menu-list
+                            for item in menu
+                                if item === current
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link.is-active(href="/" + item + ".html")= item
+                                else
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link(href="/" + item + ".html")= item
+                .b-header__mobile-menu-info
+                    .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
+                        a.b-header__lang(href="/ru/index.html") ru
+                        .b-header__lang-slash /
+                        .b-header__lang.is-active eng
+                    .b-header__contact-info
+                        a(mailto="xtf@gmail.com") xtf@gmail.com
+                        a(href="tel:+61414084941") +6(141) 408 49 41
             .b-header__hamburger.j-burger
                 span.b-header__hamburger-line
                 span.b-header__hamburger-line

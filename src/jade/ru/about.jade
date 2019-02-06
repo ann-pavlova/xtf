@@ -1,0 +1,131 @@
+include ../mixins/_svg-sprite-ru
+include ../blocks/_layoutRu
+    block title
+        title О нас
+    body
+        .l-wrap
+            .b-page__wrap
+                block header
+                    -var current = 'about'
+                    include ../blocks/_headerRu
+                block content
+                    .container
+                        .b-page
+                            .b-page__inner.b-page__ttl-block
+                                h1 В чем наше отличие от других?
+                                .b-page__ttl
+                                    p Мы объединили аналитические и теоретические знания с практическим опытом строительных площадок, мы используем инновационные технологии и современное программное обеспечение, внедряем международный опыт проектирования и строительства, что позволяет предоставить нашим клиентам максимально эффективные решения, сэкономить время и деньги.
+                                    p Мы используем пространственные расчетные модели зданий для максимальной точности наших расчетов, что позволяет обеспечить необходимую прочность с минимальными затратами средств на реализацию проектов в кратчайшие сроки, а также информационные модели зданий (BIM-технологии), что позволяет избежать неточностей и коллизий со смежными разделами.
+                                    p Мы гарантируем абсолютное качество, надежность и безопасность наших инженерных решений.
+
+                    .b-about__advantages
+                        .container
+                            .b-about__advantages-inner
+                                .b-about__advantages-block
+                                    .b-about__advantages-block-icon
+                                        +svg('responsibility')
+                                    .b-about__advantages-block-txt
+                                        h2 Ответственность
+                                        p Мы имеем большой опыт прохождения различных Государственных и частных экспертиз. Наша продукция отвечает всем требованиям Строительных Норм тех государств, которые требуются Клиенту.
+                                        p Мы гарантируем 100% качество и надежность нашей продукции, строгое соблюдение оговоренных сроков проектирования.
+                                .b-about__advantages-block
+                                    .b-about__advantages-block-icon
+                                        +svg('international')
+                                    .b-about__advantages-block-txt
+                                        h2 Международный опыт
+                                        p Мы имеем опыт работы для Клиентов в Австралии, Российской Федерации, Соединенных Штатах Америки, Европе, Казахстане и т.д.
+                                .b-about__advantages-block
+                                    .b-about__advantages-block-icon
+                                        +svg('cost')
+                                    .b-about__advantages-block-txt
+                                        h2 Экономическая эффективность
+                                        p Благодаря точным расчетам, учету практического строительного опыта производства работ, современному программному обеспечению, высочайшему классу наших специалистов мы гарантируем наиболее эффективные инженерные решения, максимально простые и быстрые в реализации.
+                                .b-about__advantages-block
+                                    .b-about__advantages-block-icon
+                                        +svg('24hours')
+                                    .b-about__advantages-block-txt
+                                        h2 Поддержка 24/7
+                                        p Мы несем полную ответственность перед нашим Клиентом, начиная с первого сказанного слова и до полного введения объекта в эксплуатацию.
+                                        p Если у Заказчика появляются вопросы касательно нашей работы – для нас нет выходных.
+                    .b-about__sertificates
+                        .container
+                            .b-about__sertificates-inner
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.engineersaustralia.org.au" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/engeneers.png" alt="Engeneers")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 Ассоциация Инженеров Австралии
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p В состав XTF входят специалисты, аккредитация, опыт и профессионализм которых подтверждается сертификатами Института Инженеров Австралии, организации, высочайший уровень которой признан во всем мире.
+                                                p Институт Инженеров Австралии - самая большая официальная группа инженеров в Австралии. Являясь основной инженерной ассоциацией Австралии, институт обслуживают и представляют около 100 000 специалистов на всех уровнях во всех областях практики. Они стремятся продвигать разработку и профессиональное развитие своих членов.
+                                                p Институт Инженеров Австралии – государственная структура, занимающаяся созданием, аккредитацией и оценкой инженерных программ и специалистов-практиков.
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.autodesk.com/products/robot-structural-analysis/overview" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/autodesk-robot.png" alt="Autodesk-robot")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 Autodesk Robot
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p Autodesk Robot Structural Analysis Professional - это интегрированная графическая программа, предназначенная для расчета и проектирования различных типов конструкции.
+                                                p Autodesk Robot Structural Analysis Professional позволяет создавать модель конструкции, выполнять статический, динамический расчеты конструкции, позволяет проверять полученные результаты, осуществлять расчеты отдельных элементов конструкций по нормам, а также готовить документацию по результатам расчета и проектирования конструкции.
+                                                p Благодаря связи между Autodesk Revit и Robot Structural Analysis Professional обеспечиваются обмен данными и доведение проектов до логического завершения.
+                                                p Используя эти возможности, существенно повышается качество совместной работы специалистов и еще раз подчеркивает ценность технологии информационного моделирования зданий (BIM) для проектировщиков строительных конструкций.
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.autodesk.com" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/autodesk-revit.png" alt="Autodesk-revit")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 Autodesk Revit
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p В состав XTF входят специалисты, прошедшие профессиональную подготовку в авторизированных учебных центрах AUTODESK, имеющие большой опыт внедрения и использования BIM-технологий, профессионализм которых подтверждается сертификатами.
+                                                p Информационное моделирование зданий (BIM) - это трехмерное цифровое представление физических и функциональных характеристик здания или объекта.
+                                                p BIM - это гораздо больше, чем инструмент для документирования, это, прежде всего, платформа для управления разработкой, координированием,  документированием и строительством объекта.
+                                                p Все наши проекты с 2014 года реализуются с использованием Autodesk Revit (Autodesk AutoCAD также доступен при необходимости).
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.csiamerica.com/products/etabs" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/etabs.png" alt="Etabs")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 BIM-интегрированный анализ
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p ETABS. Инновационный и революционный ETABS 2016 (разработчик -  Computers and Structures, Inc., США)- это совершенный интегрированный пакет программного обеспечения для расчета и проектирования зданий. Программное обеспечение, включающее 40 лет непрерывных исследований и разработок, предлагает непревзойденные инструменты трехмерного моделирования и визуализации на основе информационных объектов, невероятно быструю линейную и нелинейную аналитическую мощь, сложные и всесторонние возможности проектирования для широкого спектра материалов, а также прямую и обратную взаимосвязь с Revit, что позволяет исползовать BIM-модель здания для расчета, а результаты расчета – непосредственно для документирования, исключая появление ошибок и потери данных при параллельном использовании расчетных и графических программ.
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://scadsoft.com/en" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/scad.png" alt="Scad")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 SCAD office
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p Вычислительный комплекс SCAD реализован как интегрированная система прочностного анализа и проектирования конструкций на основе метода конечных элементов.
+                                                p Единая графическая среда синтеза расчетной схемы и анализа результатов обеспечивает неограниченные возможности моделирования расчетных схем от самых простых до самых сложных конструкций.
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.liraland.com/lira" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/lira.png" alt="Lira")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 LIRA-SAPR
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p LIRA-САПР - это комплексный программный пакет, использующий технологию BIM. Программное обеспечение предназначено для анализа и проектирования строительных и машиностроительных конструкций различного назначения.
+                                .row.b-about__sertificates-block
+                                    .b-about__sertificates-block-sertificate-logo
+                                        a(href="https://www.liraland.com/mono" target="_blank").b-about__sertificates-block-logo
+                                            img(src="../img/mono.png" alt="Mono")
+                                    .b-about__sertificates-block-txt
+                                        .b-about__sertificates-block-txt-ttl
+                                            h3 MONOMAKH-SAPR
+                                        .b-about__sertificates-block-txt-wrap
+                                            .b-about__sertificates-block-txt-inner
+                                                p МОНОМАХ-САПР предназначен для расчета и проектирования конструкций зданий из монолитного железобетона, а также зданий с кирпичными стенами. В процессе работы производится расчет здания и его отдельных частей с формированием рабочих чертежей и схем армирования конструктивных элементов.

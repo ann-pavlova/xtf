@@ -68,7 +68,7 @@ paths.src.stylesBase  = paths.srcBase + '/styles';
 paths.src.styles      = paths.src.stylesBase + '/**/*.scss';
 paths.src.tpl         = paths.src.scriptsBase + '/**/*.hbs';
 paths.src.jadeBase    = paths.srcBase + '/jade';
-paths.src.jade        = paths.src.jadeBase + '/**/*.jade';
+paths.src.jade        = [paths.src.jadeBase + '/*.jade', paths.src.jadeBase + '/ru/*.jade'];
 paths.src.spriteSvg   = paths.srcBase + '/sprites/svg/**/*.svg';
 
 paths.buildBase          = 'www';
@@ -84,55 +84,60 @@ paths.build.spriteSvg    = paths.buildBase + '/img/sprite';
 paths.html = paths.buildBase + '/**/*.html';
 
 var buildCss = function() {
-    return gulp.src(paths.src.styles)
-        .pipe(sass())
-        .on('error', notify.onError({
-            message: 'Line: <%= error.lineNumber %>:' +
-            ' <%= error.message %>' +
-            '\n<%= error.fileName %>',
-            title  : '<%= error.plugin %>'
-        }))
-        .on('error', function() {
-            this.emit('end');
-        })
-        .pipe(postcss([
-            autoprefixer({
-                browsers: ['last 3 versions'],
-                cascade : false
-            }),
-            flexbugsfixes()
-        ]))
-        .pipe(gulp.dest(paths.build.styles))
-        .pipe(browserSync.stream());
+	return gulp.src(paths.src.styles)
+		.pipe(sass())
+		.on('error', notify.onError({
+			message: 'Line: <%= error.lineNumber %>:' +
+				' <%= error.message %>' +
+				'\n<%= error.fileName %>',
+			title  : '<%= error.plugin %>'
+		}))
+		.on('error', function() {
+			this.emit('end');
+		})
+		.pipe(postcss([
+			autoprefixer({
+				browsers: ['last 3 versions'],
+				cascade : false
+			}),
+			flexbugsfixes()
+		]))
+		.pipe(gulp.dest(paths.build.styles))
+		.pipe(browserSync.stream());
 };
 
 gulp.task('hbs', function () {
-   return gulp.src('src/hbs/**/*.hbs')
-       .pipe(gulp.dest(paths.build.hbs));
+	return gulp.src('src/hbs/**/*.hbs')
+		.pipe(gulp.dest(paths.build.hbs));
+});
+
+gulp.task('json', function () {
+	return gulp.src('src/json/*.json')
+		.pipe(gulp.dest(paths.buildBase + '/json'));
 });
 
 gulp.task('svg-sprite', function() {
-    return gulp.src(paths.src.spriteSvg)
-        .pipe(svgSprite({
-            mode: {
-                symbol: {
-                    prefix    : '.b-icon__',
-                    dest      : '',
-                    dimensions: '',
-                    sprite    : 'sprite.svg',
-                    example   : false
-                }
-            },
-            svg : {
-                xmlDeclaration     : false,
-                doctypeDeclaration : false,
-                rootAttributes     : {
-                    class: 'b-icons__svg'
-                },
-                namespaceClassnames: false
-            }
-        }))
-        .pipe(gulp.dest(paths.build.spriteSvg));
+	return gulp.src(paths.src.spriteSvg)
+		.pipe(svgSprite({
+			mode: {
+				symbol: {
+					prefix    : '.b-icon__',
+					dest      : '',
+					dimensions: '',
+					sprite    : 'sprite.svg',
+					example   : false
+				}
+			},
+			svg : {
+				xmlDeclaration     : false,
+				doctypeDeclaration : false,
+				rootAttributes     : {
+					class: 'b-icons__svg'
+				},
+				namespaceClassnames: false
+			}
+		}))
+		.pipe(gulp.dest(paths.build.spriteSvg));
 });
 
 /**
@@ -143,79 +148,79 @@ gulp.task('svg-sprite', function() {
 let buildTasks = [];
 
 if (argv.prod) {
-    buildTasks = [
-        'hooks',
-        'styles',
-        'buildScripts',
-        'jade',
-        'svg-sprite',
-        'minify'
-    ];
+	buildTasks = [
+		'hooks',
+		'styles',
+		'buildScripts',
+		'jade',
+		'svg-sprite',
+		'minify'
+	];
 } else {
-    buildTasks = [
-        'hooks',
-        'styles',
-        'buildScripts',
-        'jade',
-        'svg-sprite'
-    ];
+	buildTasks = [
+		'hooks',
+		'styles',
+		'buildScripts',
+		'jade',
+		'svg-sprite'
+	];
 }
 
 gulp.task('build', buildTasks);
 
 gulp.task('styles', function() {
-    return buildCss();
+	return buildCss();
 });
 
 gulp.task('css', function() {
-    return buildCss();
+	return buildCss();
 });
 
 gulp.task('buildScripts', function jsTask() {
-    return gulp.src(paths.src.scripts, {
-        base: paths.src.scriptsBase
-    })
-        .pipe(changed(paths.build.scripts))
-        .pipe(plumber({
-            errorHandler: notify.onError({
-                message: 'Line: <%= error.lineNumber %>:' +
-                ' <%= error.message %>' +
-                '\n<%= error.fileName %>',
-                title  : '<%= error.plugin %>'
-            })
-        }))
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(plumber.stop())
-        .pipe(gulp.dest(paths.build.scripts))
-        .pipe(browserSync.stream());
+	return gulp.src(paths.src.scripts, {
+		base: paths.src.scriptsBase
+	})
+		.pipe(changed(paths.build.scripts))
+		.pipe(plumber({
+			errorHandler: notify.onError({
+				message: 'Line: <%= error.lineNumber %>:' +
+					' <%= error.message %>' +
+					'\n<%= error.fileName %>',
+				title  : '<%= error.plugin %>'
+			})
+		}))
+		.pipe(babel({
+			presets: ['es2015']
+		}))
+		.pipe(plumber.stop())
+		.pipe(gulp.dest(paths.build.scripts))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('jade', function() {
-    return gulp.src(paths.src.jade)
-        .pipe(changed(paths.build.jade, {extension: '.html'}))
-        .pipe(jadeInh({basedir: paths.src.jadeBase}))
-        .pipe(jade({
-            pretty: true
-        }))
-        .on('error', function(e) {
-            console.log(`Filename: ${e.filename}`);
-            console.log(`Message: ${e.msg}`);
-            console.log(`Path: ${e.message}`);
-        })
-        .on('error', function() {
-            this.emit('end');
-        })
-        .pipe(typograf({
-            lang   : 'ru',
-            disable: ['ru/nbsp/centuries', 'common/number/fraction']
-        }))
-        .pipe(prettify({
-            indent_size: 4
-        }))
-        .pipe(gulp.dest(paths.build.jade))
-        .pipe(browserSync.stream());
+	return gulp.src(paths.src.jade)
+		.pipe(changed(paths.build.jade, {extension: '.html'}))
+		.pipe(jadeInh({basedir: paths.src.jadeBase}))
+		.pipe(jade({
+			pretty: true
+		}))
+		.on('error', function(e) {
+			console.log(`Filename: ${e.filename}`);
+			console.log(`Message: ${e.msg}`);
+			console.log(`Path: ${e.message}`);
+		})
+		.on('error', function() {
+			this.emit('end');
+		})
+		.pipe(typograf({
+			lang   : 'ru',
+			disable: ['ru/nbsp/centuries', 'common/number/fraction']
+		}))
+		.pipe(prettify({
+			indent_size: 4
+		}))
+		.pipe(gulp.dest(paths.build.jade))
+		.pipe(browserSync.stream());
 });
 
 
@@ -227,27 +232,27 @@ gulp.task('jade', function() {
 gulp.task('lint', ['eslint', 'style-lint']);
 
 gulp.task('style-lint', function sassLintTask() {
-    return gulp.src(paths.src.styles)
-        .pipe(styleLint({
-            configFile    : '.stylelintrc',
-            failAfterError: false,
-            debug         : true,
-            syntax        : 'scss',
-            reporters     : [
-                {formatter: 'string', console: true}
-            ]
-        }));
+	return gulp.src(paths.src.styles)
+		.pipe(styleLint({
+			configFile    : '.stylelintrc',
+			failAfterError: false,
+			debug         : true,
+			syntax        : 'scss',
+			reporters     : [
+				{formatter: 'string', console: true}
+			]
+		}));
 });
 
 gulp.task('eslint', function() {
-    return gulp.src(paths.src.scripts)
-        .pipe(eslint({
-            configFile: '.eslintrc.json'
-        }))
-        .pipe(eslint.format())
-        // To have the process exit with an error code (1) on
-        // lint error, return the stream and pipe to failAfterError last.
-        .pipe(eslint.failAfterError());
+	return gulp.src(paths.src.scripts)
+		.pipe(eslint({
+			configFile: '.eslintrc.json'
+		}))
+		.pipe(eslint.format())
+		// To have the process exit with an error code (1) on
+		// lint error, return the stream and pipe to failAfterError last.
+		.pipe(eslint.failAfterError());
 
 });
 
@@ -256,21 +261,21 @@ gulp.task('eslint', function() {
  */
 
 gulp.task('hooks', function() {
-    gulp.src('hooks/*')
-        .pipe(chmod({
-            execute: true
-        }))
-        .pipe(gulp.dest('.git/hooks/'));
+	gulp.src('hooks/*')
+		.pipe(chmod({
+			execute: true
+		}))
+		.pipe(gulp.dest('.git/hooks/'));
 });
 
 /**
  * Notify task
  s */
 gulp.task('pre-commit-notify', function() {
-    notifier.notify({
-        message: 'Fix errors first',
-        title  : 'Commit failed'
-    });
+	notifier.notify({
+		message: 'Fix errors first',
+		title  : 'Commit failed'
+	});
 });
 
 /**
@@ -279,7 +284,7 @@ gulp.task('pre-commit-notify', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: './',
+            baseDir: 'www',
         },
         port  : 8080,
         open: false
@@ -292,30 +297,33 @@ gulp.task('browser-sync', function() {
 gulp.task('minify', ['css-nano', 'uglifyJS']);
 
 gulp.task('css-nano', ['styles'], function() {
-    return gulp.src(paths.build.stylesFiles)
-        .pipe(sourcemaps.init())
-        .pipe(cssnano())
-        .pipe(sourcemaps.write('sourcemaps'))
-        .pipe(gulp.dest(paths.build.styles));
+	return gulp.src(paths.build.stylesFiles)
+		.pipe(sourcemaps.init())
+		.pipe(cssnano())
+		.pipe(sourcemaps.write('sourcemaps'))
+		.pipe(gulp.dest(paths.build.styles));
 });
 
 gulp.task('uglifyJS', ['buildScripts'], function() {
-    gulp.src(paths.build.scriptsFiles)
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(sourcemaps.write('sourcemaps'))
-        .pipe(gulp.dest(paths.build.scripts));
+	gulp.src(paths.build.scriptsFiles)
+		.pipe(sourcemaps.init())
+		.pipe(uglify())
+		.pipe(sourcemaps.write('sourcemaps'))
+		.pipe(gulp.dest(paths.build.scripts));
 });
 
 /**
  * Watch task
  */
 gulp.task('watch', ['build', 'browser-sync'], function watch() {
-    gulp.watch(paths.src.styles, ['css']);
-    gulp.watch(paths.src.scripts, ['buildScripts']);
-    gulp.watch(paths.src.jade, ['jade']);
-    gulp.watch(paths.src.spriteSvg, ['svg-sprite']);
-    gulp.watch(['src/hbs/**/*.hbs'], ['hbs']);
+	gulp.watch(paths.src.styles, ['css']);
+	gulp.watch(paths.src.scripts, ['buildScripts']);
+	gulp.watch(paths.src.jade, ['jade']);
+	gulp.watch(paths.src.spriteSvg, ['svg-sprite']);
+	gulp.watch(['src/hbs/**/*.hbs'], ['hbs']);
+	gulp.watch(['src/json/*.json'], ['json']);
+	gulp.watch(['src/img/*'], ['img']);
+	gulp.watch(['src/fonts/*'], ['fonts']);
 });
 
 // Run

@@ -19,6 +19,20 @@
     }
 }
 
+.b-projects__tabs_lang_ru {
+    @include column(36);
+
+    @media #{$large-up} {
+        @include column(22);
+        @include push(14);
+    }
+
+    @media #{$xlarge-up} {
+        @include column(16);
+        @include push(20);
+    }
+}
+
 .b-projects__album-overlay {
     @include prefix(2);
     @include suffix(2);
@@ -42,7 +56,7 @@
 
     @media #{$large-up} {
         @include margin-leader(8);
-        @include margin-trailer(10);
+        @include margin-trailer(6);
     }
 }
 
@@ -100,6 +114,11 @@
     &:nth-child(4n) {
         @include post(0);
     }
+}
+
+.b-projects__album-author-txt {
+    @include margin-leader(2);
+    color: $yellow;
 }
 
 .b-projects__album-link {

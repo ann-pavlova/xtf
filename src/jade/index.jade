@@ -1,94 +1,29 @@
-include mixins/all-mixins
-doctype html
-html(lang='ru')
-    head
-        meta(charset="UTF-8")
-        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
-        meta(name="cmsmagazine"  content="f2d72d3408f63252b7c735ac5b026ced")
-        link(rel='shortcut icon' type='image/x-icon' href='www//img/favicons/favicon.ico')
-        link(rel="icon" type="image/png" sizes="16x16" href="www/img/favicons//favicon-16x16.png")
-        link(rel="icon" type="image/png" sizes="32x32" href="www/img/favicons//favicon-32x32.png")
-        link(rel="apple-touch-icon" sizes="57x57" href="www/img/favicons//apple-icon-57x57.png")
-        link(rel="apple-touch-icon" sizes="72x72" href="www/img/favicons//apple-icon-72x72.png")
-        link(rel="apple-touch-icon" sizes="114x114" href="www/img/favicons//apple-icon-114x114.png")
-        link(rel="apple-touch-icon" sizes="120x120" href="www/img/favicons//apple-icon-120x120.png")
-        link(rel="apple-touch-icon" sizes="144x144" href="www/img/favicons//apple-icon-144x144.png")
-        link(rel="apple-touch-icon" sizes="152x152" href="www/img/favicons//apple-icon-152x152.png")
-        link(rel='stylesheet' href="www/styles/magnific-popup.css")
-        link(rel='stylesheet' href="www/scripts/lib/slick-carousel/slick/slick.css")
-        link(rel='stylesheet' href="www/styles/app.css")
-
-        block title
-            title Home page
+include mixins/_svg-sprite
+include blocks/_layout
+    block title
+        title Home
     body
         .l-wrap.l-wrap_type_home
             .b-page__wrap.b-page__wrap_type_home
-                .b-header__wrapper.b-header__wrapper_type_home
-                    .b-header.b-header_type_desk
-                        .container
-                            .b-header__inner
-                                a(href="/index.html").b-header__logo
-                                    +svg('logo', 'b-page__logo_theme_light')
-                                .b-header__menu
-                                    ul.b-header__menu-list
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/about.html") about
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/services.html") SERVICES
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/projects.html") Projects
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/careers.html") Careers
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/contacts.html") Contacts
-                                .b-header__phone
-                                    a(href="tel:+61414084941") +6 141 408 49 41
-                    .b-header.b-header_type_mob
-                        .b-header__inner
-                            a(href="/index.html").b-header__logo
-                                +svg('logo', 'b-page__logo_theme_light')
-                            .b-header__mobile-menu-wrap
-                                .b-header__mobile-menu
-                                    ul.b-header__menu-list
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/about.html") about
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/services.html") SERVICES
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/projects.html") Projects
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/careers.html") Careers
-                                        li.b-header__menu-item
-                                            a.b-header__menu-link(href="/contacts.html") Contacts
-                                .b-header__phone
-                                    a(href="tel:+61414084941") +6 141 408 49 41
-                            .b-header__hamburger.j-burger
-                                span.b-header__hamburger-line
-                                span.b-header__hamburger-line
-                                span.b-header__hamburger-line
-                                span.b-header__hamburger-line
+                block header
+                    -var pageHome = true
+                    include blocks/_header
                 .b-home__slider-wrap
                     .b-slider.j-home-slider
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide1.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide2.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide3.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide4.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide5.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide6.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide7.jpg');")
-                        .b-slider__item.b-home__slider-item(style="background-image: url('www/img/home/slide8.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide1.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide2.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide3.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide4.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide5.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide6.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide7.jpg');")
+                        .b-slider__item.b-home__slider-item(style="background-image: url('../img/home/slide8.jpg');")
                 .b-home__slider-content
-                        .b-home__slider-content-ttl
-                            h1 There are no too small or <br/> too complex projects
-                        .b-home__slider-content-subttl
-                            p Formed in 2008, XTF brought together a group of experienced engineers, designers and site managers, who had delivered landmark building projects across of all continents.
-                            p XTF is a Structural Engineering firm with offices in Brisbane (Australia), Saint-Petersburg (Russian Federation), Kharkov (Ukraine). Main line of business is development of commercial, residential, industrial, civil structures building projects.
-                            p These projects encompass the full spectrum of building types and scale.
-
-
-
-        include ../../www/img/sprite/sprite.svg
-        script(src="www/scripts/jquery-3.2.1.min.js")
-        script(src="www/scripts/app.js")
-        script(src="www/scripts/lib/slick-carousel/slick/slick.js")
-        script(src="www/scripts/jquery.magnific-popup.min.js")
+                    .b-home__slider-content-ttl
+                        h1 There are no too small or <br/> too complex projects.
+                    .b-home__slider-content-subttl
+                        p Formed in 2008, XTF brought together a group of experienced engineers, designers, and site managers who delivered landmark building projects across the globe.
+                        p In 2013, we started using 3D modelling, and since 2014, all our projects have been delivered in Building Information Modelling (BIM). This significantly increased the speed, quality, and effectiveness of our work.
+                        p XTF is an international structural engineering firm with offices in Sydney (Australia), Saint-Petersburg (Russian Federation), and Kharkov (Ukraine), and our engineers, modelers, and draftsmen are experienced in working according to the different building codes and standards our clients require: Australian and New Zealand standards, US standards, Eurocodes, Russian standards, and Kazakhstan standards.
+                        p Our main line of business is the development of commercial, residential, and industrial building projects.
+                        p These projects encompass the full spectrum of building types and range from private houses to factories and multi-storey towers.

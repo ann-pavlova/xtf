@@ -1,0 +1,52 @@
+include ../mixins/_svg-sprite-ru
+.b-header__wrapper(class=pageHome === true ? "b-header__wrapper_type_home":"")
+    .b-header.b-header_type_desk
+        .container
+            .b-header__inner
+                a(href="index.html").b-header__logo
+                    +svg('logo')
+                .b-header__menu
+                    - var menu = [{'name': 'about', 'value': 'о нас'}, {'name': 'services', 'value': 'услуги'}, {'name': 'projects', 'value': 'проекты'}, {'name': 'careers', 'value': 'карьера'}, {'name': 'contacts', 'value': 'контакты'}];
+                        ul.b-header__menu-list
+                            each item in menu
+                                if item.name === current
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link.is-active(href="/ru/" + item.name + ".html")= item.value
+                                else
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link(href="/ru/" + item.name + ".html")= item.value
+                .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
+                    .b-header__lang.is-active ru
+                    .b-header__lang-slash /
+                    a.b-header__lang(href="/index.html") eng
+                .b-header__contact-info
+                    a(href="mailto:xtf@gmail.com") xtf@gmail.com
+                    a(href="tel:+61414084941") +6(141) 408 49 41
+    .b-header.b-header_type_mob
+        .b-header__inner
+            a(href="index.html").b-header__logo
+                +svg('logo')
+            .b-header__mobile-menu-wrap
+                .b-header__mobile-menu
+                    - var menu = [{'name': 'about', 'value': 'о нас'}, {'name': 'services', 'value': 'услуги'}, {'name': 'projects', 'value': 'проекты'}, {'name': 'careers', 'value': 'карьера'}, {'name': 'contacts', 'value': 'контакты'}];
+                        ul.b-header__menu-list
+                            each item in menu
+                                if item === current
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link.is-active(href="/ru/" + item.name + ".html")= item.value
+                                else
+                                    li.b-header__menu-item
+                                        a.b-header__menu-link(href="/ru/" + item.name + ".html")= item.value
+                .b-header__mobile-menu-info(class=pageHome === true ? "b-header__langs_page_home":"")
+                    .b-header__langs
+                        .b-header__lang.is-active ru
+                        .b-header__lang-slash /
+                        a.b-header__lang(href="/index.html") eng
+                    .b-header__contact-info
+                        a(mailto="xtf@gmail.com") xtf@gmail.com
+                        a(href="tel:+61414084941") +6(141) 408 49 41
+            .b-header__hamburger.j-burger
+                span.b-header__hamburger-line
+                span.b-header__hamburger-line
+                span.b-header__hamburger-line
+                span.b-header__hamburger-line

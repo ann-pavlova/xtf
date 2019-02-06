@@ -52,12 +52,12 @@
 .b-icon__logo {
     width: 60px;
     height: 30px;
-    
+
     @media #{$medium-up} {
         width: 80px;
         height: 40px;
     }
-    
+
     @media #{$large-up} {
         width: 90px;
         height: 45px;

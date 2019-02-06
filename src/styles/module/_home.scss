@@ -15,7 +15,7 @@
 .b-home__slider-content {
     @include push(2);
     @include post(2);
-    @include padding-leader(5);
+    @include padding-leader(3);
     @include padding-trailer(4);
     
     @media #{$medium-up} {
@@ -26,12 +26,25 @@
     
     @media #{$large-up} {
         @include margin-leader(3);
+        @include push(5);
+        @include post(4);
+        top: 43%;
+    }
+
+    @media #{$xlarge-up} {
         @include push(7);
         @include post(5);
+        top: 40%;
     }
 
     h1 {
         color: $yellow;
+
+        @media #{$large-only} {
+            br {
+                display: none;
+            }
+        }
     }
 
     &.is-hor-mobile {
@@ -41,20 +54,24 @@
 }
 
 .b-home__slider-content-ttl {
-    @include margin-trailer(3);
+    @include margin-trailer(1.5);
+
+    @media #{$medium-up} {
+        @include margin-trailer(3);
+    }
 }
 
 .b-home__slider-content-subttl {
     color: $lightGray;
 
     @media #{$large-up} {
-        @include column(28);
+        @include column(36);
         font-size: 22px;
         line-height: 30px;
     }
 
     @media #{$xlarge-up} {
-        @include column(24);
+        @include column(27);
     }
 }
 

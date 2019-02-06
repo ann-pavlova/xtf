@@ -1,0 +1,18 @@
+include ../mixins/_svg-sprite-ru
+include ../blocks/_layoutRu
+    block title
+        title Карьера
+    body
+        .l-wrap.l-wrap_type_careers(style="background-image: url('../img/careers-bg.svg')")
+            .b-page__wrap
+                block header
+                    -var current = 'careers'
+                    include ../blocks/_headerRu
+                block content
+                    .container
+                        .b-page
+                            .b-page__inner.b-page__ttl-block
+                                h1 Карьера
+                                .b-page__ttl В настоящее время открытых вакансий нет, но мы всегда открыты для талантливых архитекторов, инженеров и специалистов в 3D моделировании.
+                                    p Вы всегда можете отправить нам свое резюме и мы обязательно с Вами свяжемся.
+

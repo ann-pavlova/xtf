@@ -5,12 +5,21 @@
     @include suffix(2);
 
     @media #{$large-up} {
-        @include padding-leader(6);
-        @include padding-trailer(4);
+        @include rhythm-padding(5);
     }
 
     @media #{$xlarge-up} {
-        @include rhythm-padding(12);
+        @include padding-trailer(2);
+    }
+}
+
+.b-about__advantages-slogan {
+    @include margin-trailer(2);
+    text-align: center;
+    font-weight: bold;
+
+    @media #{$medium-up} {
+        @include padding-trailer(5);
     }
 }
 
@@ -84,44 +93,50 @@
     @include prefix(2);
     @include suffix(2);
     @include padding-leader(5);
-    @include padding-trailer(1);
+    @include padding-trailer(4);
     background-image: url("../img/sertificates-bg.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     
     @media #{$big-up} {
-        @include padding-trailer(0);
+        @include padding-trailer(2);
     }
 
     @media #{$large-up} {
-        @include padding-leader(8);
-        @include padding-trailer(1);
+        @include padding-leader(5);
+        @include padding-trailer(3);
     }
 
     @media #{$xlarge-up} {
-        @include padding-leader(12);
-        @include padding-trailer(8);
+        @include padding-leader(5);
+        @include padding-trailer(4);
     }
 }
 
 .b-about__sertificates-inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     
     @media #{$large-up} {
-        @include push(2);
-        @include post(2);
+        //@include push(2);
+        //@include post(2);
+        align-items: flex-start;
     }
 }
 
 .b-about__sertificates-block {
-    @include margin-trailer(4);
+    @include margin-trailer(2);
     @include column(36);
     display: block !important;
 
+    &:last-child {
+        @include margin-trailer(0);
+    }
+
     @media #{$big-up} {
-        @include margin-trailer(6);
+        @include margin-trailer(3);
         @include column(17);
         @include post(2);
         display: flex !important;
@@ -143,6 +158,7 @@
     
     @media #{$big-up} {
         @include column(16);
+        @include margin-trailer(1);
     }
     
     @media #{$large-up} {
@@ -196,7 +212,6 @@
 
     @media #{$big-up} {
         @include margin-trailer(2);
-
     }
 }
 
@@ -212,7 +227,6 @@
 .b-about__sertificates-block-txt-inner {
     @include margin-trailer(1);
     @include transition(max-height);
-    //max-height: 85px;
     overflow: hidden;
     position: relative;
 
@@ -222,6 +236,10 @@
 
     @media #{$big-up} {
         @include margin-trailer(2);
+    }
+
+    @media #{$large-up} {
+        @include margin-trailer(0);
     }
 }
 

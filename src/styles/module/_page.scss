@@ -12,10 +12,16 @@
 
 .b-page__ttl-block {
     @include column(36);
-    @include rhythm-margins(4);
+    @include rhythm-margins(3);
 
     h1 {
-        @include margin-trailer(3);
+        @include margin-trailer(1);
+    }
+
+    @media #{$medium-up} {
+        h1 {
+            @include margin-trailer(3);
+        }
     }
     
     @media #{$big-up} {
@@ -28,15 +34,11 @@
         @include column(28);
         @include push(2);
         @include post(2);
-
-        h1 {
-            @include margin-trailer(5);
-        }
     }
 
     @media #{$xxlarge-up} {
-        @include margin-leader(12);
-        @include margin-trailer(20);
+        @include margin-leader(9);
+        @include margin-trailer(13);
         @include column(20);
     }
 }

@@ -49,12 +49,12 @@
 
 .b-header__menu {
     @media #{$large-up} {
-        @include post(7);
+        @include post(6);
         @include column(18);
     }
 
     @media #{$xlarge-up} {
-        @include post(12);
+        @include post(11);
         @include column(13);
     }
 }
@@ -123,20 +123,26 @@
     }
 }
 
-.b-header__phone {
+.b-header__contact-info {
     @include column(3);
     text-align: right;
+
+    a {
+        display: inline-block;
+    }
 }
 
 //home page
 .b-header__wrapper_type_home {
     width: 100%;
-    //position: absolute;
-    //top: 0;
     z-index: 1;
 
+    .b-icon__logo {
+        fill: $lightGray;
+    }
+
     .b-header__logo,
-    .b-header__phone a,
+    .b-header__contact-info a,
     .b-header__menu-link {
         color: $lightGray;
     }
@@ -250,11 +256,11 @@
         right: 0;
     }
 
-    .b-header__phone {
-        @include column(36);
-        align-self: flex-end;
+    .b-header__contact-info {
+        max-width: 100%;
 
         a {
+            display: block;
             color: $yellow;
         }
     }
@@ -262,4 +268,46 @@
 
 .b-header__mobile-menu {
     width: 100%;
+}
+
+.b-header__mobile-menu-info {
+    @include column(36);
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-header__langs {
+    display: flex;
+    color: $gray;
+
+    .b-header__lang-slash {
+        color: rgba($gray, .5);
+    }
+
+    .b-header__lang {
+        color: rgba($gray, .5);
+        cursor: pointer;
+
+        &.is-active {
+            color: $gray;
+            cursor: default;
+        }
+    }
+}
+
+.b-header__langs_page_home {
+    color: $lightGray;
+
+    .b-header__lang-slash {
+        color: rgba($lightGray, .5);
+    }
+
+    .b-header__lang {
+        color: rgba($lightGray, .5);
+
+        &.is-active {
+            color: $lightGray;
+        }
+    }
 }

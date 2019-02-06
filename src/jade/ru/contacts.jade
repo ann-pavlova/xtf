@@ -1,0 +1,20 @@
+include ../mixins/_svg-sprite-ru
+include ../blocks/_layoutRu
+    block title
+        title Контакты
+    body
+        .l-wrap.l-wrap_type_contacts(style="background-image: url('../img/contacts-bg.svg')")
+            .b-page__wrap
+                block header
+                    -var current = 'contacts'
+                    include ../blocks/_headerRu
+                block content
+                    .container
+                        .b-page
+                            .b-page__inner.b-page__ttl-block
+                                h1 Contacts
+                                .b-page__ttl Контакты:
+                                    ul
+                                        li Email: xtf@gmail.com
+                                        li Phone: +6(141) 408 49 41
+                                        li Linkedin: linkedin/vdfvfg

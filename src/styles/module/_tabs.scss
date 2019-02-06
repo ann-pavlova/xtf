@@ -19,7 +19,7 @@
     
     @media #{$small-only} {
         @include margin-trailer(2);
-        @include post(1);
+        @include post(.5);
     }
 
     &.is-active {
@@ -38,5 +38,16 @@
             transform: translateX(-50%) translateY(-50%);
             z-index: -1;
         }
+    }
+}
+
+.b-tabs__link_lang_ru {
+    @include margin-trailer(1);
+    font-size: 13px;
+    line-height: 16px;
+
+    @media #{$large-up} {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
