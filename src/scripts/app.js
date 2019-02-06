@@ -3,6 +3,8 @@ let albumsTemplate;
 let popupTemplate;
 let popupContentTemplate;
 
+let hbsUrl = 'http://localhost:63342/xtf(dev)/www/hbs/';
+
 $(function () {
     //init gallery
     (function($homeSlider) {
@@ -57,7 +59,7 @@ $(function () {
                 success: function(data) {
                     albums = JSON.parse(data);
 
-                    $.get('../hbs/albums.hbs', function (template) {
+                    $.get(`${hbsUrl}albums.hbs`, function (template) {
                         albumsTemplate = Handlebars.compile(template);
                         $('.b-tabs__content').html(albumsTemplate(albums));
                     }, 'html');
@@ -149,16 +151,16 @@ $(function () {
             success: function(data) {
                 albums = JSON.parse(data);
 
-                $.get('../hbs/albums.hbs', function (template) {
+                $.get(`${hbsUrl}albums.hbs`, function (template) {
                     albumsTemplate = Handlebars.compile(template);
                     $('.b-tabs__content').html(albumsTemplate(albums));
                 }, 'html');
 
-                $.get('../hbs/projects-popup.hbs', function (template) {
+                $.get(`${hbsUrl}projects-popup.hbs`, function (template) {
                     popupTemplate = Handlebars.compile(template);
                 }, 'html');
 
-                $.get('../hbs/project-popup-content.hbs', function (template) {
+                $.get(`${hbsUrl}project-popup-content.hbs`, function (template) {
                     popupContentTemplate = Handlebars.compile(template);
                 }, 'html');
             }

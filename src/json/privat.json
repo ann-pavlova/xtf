@@ -1,13 +1,13 @@
 [
   {
     "name": "townhouses",
-    "preview": "../img/projects/privat/townhouses-preview.jpg",
-    "images": ["../img/projects/privat/townhouses/01.jpg", "../img/projects/privat/townhouses/02.jpg", "../img/projects/privat/townhouses/03.jpg", "../img/projects/privat/townhouses/04.jpg", "../img/projects/privat/townhouses/05.jpg", "../img/projects/privat/townhouses/06.jpg"]
+    "preview": "img/projects/privat/townhouses-preview.jpg",
+    "images": ["img/projects/privat/townhouses/01.jpg", "img/projects/privat/townhouses/02.jpg", "img/projects/privat/townhouses/03.jpg", "img/projects/privat/townhouses/04.jpg", "img/projects/privat/townhouses/05.jpg", "img/projects/privat/townhouses/06.jpg"]
   },
   {
     "name": "Houses",
-    "preview": "../img/projects/privat/houses-preview.jpg",
-    "images": ["../img/projects/privat/houses/01.jpg", "../img/projects/privat/houses/02.jpg", "../img/projects/privat/houses/03.jpg", "../img/projects/privat/houses/04.jpg", "../img/projects/privat/houses/05.jpg", "../img/projects/privat/houses/06.jpg"]
+    "preview": "img/projects/privat/houses-preview.jpg",
+    "images": ["img/projects/privat/houses/01.jpg", "img/projects/privat/houses/02.jpg", "img/projects/privat/houses/03.jpg", "img/projects/privat/houses/04.jpg", "img/projects/privat/houses/05.jpg", "img/projects/privat/houses/06.jpg"]
   }
 ]
 

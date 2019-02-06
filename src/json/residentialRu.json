@@ -6,8 +6,8 @@
       "text": "<p>The residential complex consists of 12 blocks of 17–24 levels with basement parking. All frames are cast-in-place RC. The foundations are solid slab on piles up to 18m long.</p><p>We are proud to say that XTF has been conducting project management for this project, and our specialists have developed a full set of structural documentation for all stages: geological engineering and pile field design, foundation slabs, RC frame design, etc.</p>",
       "list": ["1-4 blocks were finished in 2017;", "5–8 blocks were finished in 2018;", "9–12 blocks are still under construction."]
     },
-    "preview": "img/projects/residential/avant-garde-preview.jpg",
-    "images": ["img/projects/residential/avant-garde/01.jpg", "img/projects/residential/avant-garde/02.jpg", "img/projects/residential/avant-garde/03.jpg", "img/projects/residential/avant-garde/04.jpg", "img/projects/residential/avant-garde/05.jpg", "img/projects/residential/avant-garde/05.jpg", "img/projects/residential/avant-garde/06.jpg", "img/projects/residential/avant-garde/07.jpg", "img/projects/residential/avant-garde/08.jpg", "img/projects/residential/avant-garde/09.jpg"]
+    "preview": "../img/projects/residential/avant-garde-preview.jpg",
+    "images": ["../img/projects/residential/avant-garde/01.jpg", "../img/projects/residential/avant-garde/02.jpg", "../img/projects/residential/avant-garde/03.jpg", "../img/projects/residential/avant-garde/04.jpg", "../img/projects/residential/avant-garde/05.jpg", "../img/projects/residential/avant-garde/05.jpg", "../img/projects/residential/avant-garde/06.jpg", "../img/projects/residential/avant-garde/07.jpg", "../img/projects/residential/avant-garde/08.jpg", "../img/projects/residential/avant-garde/09.jpg"]
   },
   {
     "name": "FIVE CAPITALS",
@@ -16,8 +16,8 @@
       "text": "<p>This premium class residential complex consists of five 26-storey residential towers with a 7-storey podium, including a 3-storey fitness centre, 3-storey shopping centre, and underground parking for 388 cars.</p><p>We are proud to say that XTF has been providing project and on-site management in this project, and our specialists have developed a full set of structural documents: geological engineering and pile field design, retaining structures, foundations, RC frame design, facades, etc.</p>",
       "list": ["1st stage and basement parking – finished in 2018;", "2nd stage under construction – will be finished at the end of 2019;", "3rd stage under construction – will be finished at the end of 2020."]
     },
-    "preview": "img/projects/residential/five-capitals-preview.jpg",
-    "images": ["img/projects/residential/five-capitals/01.jpg", "img/projects/residential/five-capitals/02.jpg", "img/projects/residential/five-capitals/04.jpg", "img/projects/residential/five-capitals/05.jpg", "img/projects/residential/five-capitals/05.jpg", "img/projects/residential/five-capitals/06.jpg", "img/projects/residential/five-capitals/07.jpg", "img/projects/residential/five-capitals/08.jpg", "img/projects/residential/five-capitals/09.jpg"]
+    "preview": "../img/projects/residential/five-capitals-preview.jpg",
+    "images": ["../img/projects/residential/five-capitals/01.jpg", "../img/projects/residential/five-capitals/02.jpg", "../img/projects/residential/five-capitals/04.jpg", "../img/projects/residential/five-capitals/05.jpg", "../img/projects/residential/five-capitals/05.jpg", "../img/projects/residential/five-capitals/06.jpg", "../img/projects/residential/five-capitals/07.jpg", "../img/projects/residential/five-capitals/08.jpg", "../img/projects/residential/five-capitals/09.jpg"]
   },
   {
     "name": "Paris",
@@ -26,8 +26,8 @@
       "text": "<p>This premium-class residential complex consists of 16 buildings and 7–12 levels with basement parking.</p><p>Basement and ground levels are commercial: parking, shops, and offices.</p><p>Loud-bearing frame is cast-in-place RC. The foundations are slab on piles up to 12m long.</p><p>XTF was responsible for retaining structures and the first stage of development.</p><p>1st stage was finished in 2017.</p><p>2nd stage is still under construction.</p>",
       "list": ["1st stage finished in 2017;", "2nd stage under construct."]
     },
-    "preview": "img/projects/residential/paris-preview.jpg",
-    "images": ["img/projects/residential/paris/01.jpg", "img/projects/residential/paris/02.jpg", "img/projects/residential/paris/03.jpg", "img/projects/residential/paris/04.jpg", "img/projects/residential/paris/05.jpg", "img/projects/residential/paris/06.jpg", "img/projects/residential/paris/07.jpg", "img/projects/residential/paris/08.jpg", "img/projects/residential/paris/09.jpg", "img/projects/residential/paris/10.jpg", "img/projects/residential/paris/11.jpg"]
+    "preview": "../img/projects/residential/paris-preview.jpg",
+    "images": ["../img/projects/residential/paris/01.jpg", "../img/projects/residential/paris/02.jpg", "../img/projects/residential/paris/03.jpg", "../img/projects/residential/paris/04.jpg", "../img/projects/residential/paris/05.jpg", "../img/projects/residential/paris/06.jpg", "../img/projects/residential/paris/07.jpg", "../img/projects/residential/paris/08.jpg", "../img/projects/residential/paris/09.jpg", "../img/projects/residential/paris/10.jpg", "../img/projects/residential/paris/11.jpg"]
   },
   {
     "name": "Grand-prix",
@@ -36,8 +36,8 @@
       "text": "<p>Luxury residential and commercial complex consists of five blocks 9–23 stories high with 2-storey basement parking.</p><p>Load-bearing frame is cast-in-place RC. The foundations are slab on piles up to 12m long.</p><p>For this project, XTF has developed a full set of structural documents: geological engineering and pile field design, retention structures, foundations, RC frames design, etc.</p><p>Design work is completed, and the building is under construction.</p>",
       "list": ["Under construct."]
     },
-    "preview": "img/projects/residential/grand-prix-preview.jpg",
-    "images": ["img/projects/residential/grand-prix/01.jpg", "img/projects/residential/grand-prix/02.jpg", "img/projects/residential/grand-prix/03.jpg", "img/projects/residential/grand-prix/04.jpg", "img/projects/residential/grand-prix/06.jpg", "img/projects/residential/grand-prix/07.jpg", "img/projects/residential/grand-prix/08.jpg"]
+    "preview": "../img/projects/residential/grand-prix-preview.jpg",
+    "images": ["../img/projects/residential/grand-prix/01.jpg", "../img/projects/residential/grand-prix/02.jpg", "../img/projects/residential/grand-prix/03.jpg", "../img/projects/residential/grand-prix/04.jpg", "../img/projects/residential/grand-prix/06.jpg", "../img/projects/residential/grand-prix/07.jpg", "../img/projects/residential/grand-prix/08.jpg"]
   }
 ]
 

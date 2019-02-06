@@ -11,12 +11,12 @@ include ../mixins/_svg-sprite
                             for item in menu
                                 if item === current
                                     li.b-header__menu-item
-                                        a.b-header__menu-link.is-active(href="/" + item + ".html")= item
+                                        a.b-header__menu-link.is-active(href="./" + item + ".html")= item
                                 else
                                     li.b-header__menu-item
-                                        a.b-header__menu-link(href="/" + item + ".html")= item
+                                        a.b-header__menu-link(href="./" + item + ".html")= item
                 .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
-                    a.b-header__lang(href="/ru/index.html") ru
+                    a.b-header__lang(href="./ru/index.html") ru
                     .b-header__lang-slash /
                     .b-header__lang.is-active eng
                 .b-header__contact-info
@@ -33,13 +33,13 @@ include ../mixins/_svg-sprite
                             for item in menu
                                 if item === current
                                     li.b-header__menu-item
-                                        a.b-header__menu-link.is-active(href="/" + item + ".html")= item
+                                        a.b-header__menu-link.is-active(href="./" + item + ".html")= item
                                 else
                                     li.b-header__menu-item
-                                        a.b-header__menu-link(href="/" + item + ".html")= item
+                                        a.b-header__menu-link(href="./" + item + ".html")= item
                 .b-header__mobile-menu-info
                     .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
-                        a.b-header__lang(href="/ru/index.html") ru
+                        a.b-header__lang(href="./ru/index.html") ru
                         .b-header__lang-slash /
                         .b-header__lang.is-active eng
                     .b-header__contact-info
