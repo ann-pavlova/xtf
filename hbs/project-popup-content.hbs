@@ -1,0 +1,14 @@
+<div class="b-projects__album-txt-container">
+    {{#if description}}
+        <div class="b-projects__album-txt-container-ttl">{{description.title}}</div>
+        <div class="b-projects__album-txt-container-txt">{{{description.text}}}</div>
+        <ul class="b-projects__album-txt-container-list">
+        {{#each description.list}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    {{/if}}
+	<div class="b-projects__album-author-txt">We appreciate our Clients Privacy Policy and not every project can be shown in our portfolio. Projects where
+		XTF took part as a sub-contractor does not shown.
+	</div>
+</div>

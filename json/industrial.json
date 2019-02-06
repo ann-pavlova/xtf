@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Meat factory",
+    "description": {
+      "title": "Meat processing factory",
+      "text": "<p>The pork processing factory has a capacity of 470,000 tons per year. The complex consists of 33 buildings of various purposes and sizes. The main building with an area of 14.5 thousand m2 has a steel frame with RC columns. The administrative buildings are made of RC.</p><p>The construction of the plant was completed in 2016.</p><p>XTF developed a full set of structural documents: geological engineering, foundations design, steel frame, RC column design, all equipment foundations and facade systems design, etc.</p>"
+    },
+    "preview": "img/projects/industrial/meat-preview.jpg",
+    "images": ["img/projects/industrial/meat/01.jpg", "img/projects/industrial/meat/02.jpg", "img/projects/industrial/meat/03.jpg", "img/projects/industrial/meat/04.jpg", "img/projects/industrial/meat/05.jpg", "img/projects/industrial/meat/06.jpg", "img/projects/industrial/meat/07.jpg", "img/projects/industrial/meat/08.jpg", "img/projects/industrial/meat/09.jpg", "img/projects/industrial/meat/10.jpg", "img/projects/industrial/meat/11.jpg"]
+  },
+  {
+    "name": "Warehouse",
+    "description": {
+      "title": "Warehouse",
+      "text": "<p>XTF’s engineers and architects designed many warehouse buildings of different sizes and purposes.</p><p>The building shown on photos is a warehouse for storage of construction tools and building materials, total area is 1000м2. Steel frame and precast wall panels.</p><p>XTF developed a full set of structural and architectural documentation for this project.</p><p>Built in 2015.</p>"
+    },
+    "preview": "img/projects/industrial/warehouse-preview.jpg",
+    "images": ["img/projects/industrial/warehouse/01.jpg", "img/projects/industrial/warehouse/02.jpg", "img/projects/industrial/warehouse/03.jpg"]
+  }
+]
+

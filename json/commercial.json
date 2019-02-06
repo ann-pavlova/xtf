@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Lexus",
+    "description": {
+      "title": "Official dealer centre for the sale and maintenance of Lexus cars.",
+      "text": "<p>The new dealer centre building opened in 2013. The building is divided into three parts: an exhibition hall, office premises, and a mechanical service station.</p><p>We are proud to say that XTF participated in project management in this project, and a full set of structural documents were developed by our specialists: geological engineering and pile field design, foundations, steel frame, RC floor design, mechanical equipment installation, facade systems design, etc.</p>"
+    },
+    "preview": "img/projects/commercial/lexus-preview.jpg",
+    "images": ["img/projects/commercial/lexus/01.jpg", "img/projects/commercial/lexus/02.jpg", "img/projects/commercial/lexus/03.jpg", "img/projects/commercial/lexus/04.jpg", "img/projects/commercial/lexus/05.jpg", "img/projects/commercial/lexus/06.jpg", "img/projects/commercial/lexus/07.jpg", "img/projects/commercial/lexus/08.jpg"]
+  },
+  {
+    "name": "Toyota",
+    "description": {
+      "title": "Official dealer centre for the sale and maintenance of Toyota cars.",
+      "text": "<p>The building of the new dealer centre opened in 2008. The building is divided into 3 parts: an exhibition hall, office premises, and a mechanical service station.</p><p>The team of engineers that later found XTF developed a full set of structural documents: geological engineering and pile field design, foundations, steel frame, RC floor design, mechanical equipment installation, facade systems design, etc.</p>"
+    },
+    "preview": "img/projects/commercial/toyota-preview.jpg",
+    "images": ["img/projects/commercial/toyota/01.jpg", "img/projects/commercial/toyota/02.jpg", "img/projects/commercial/toyota/04.jpg", "img/projects/commercial/toyota/05.jpg", "img/projects/commercial/toyota/05.jpg", "img/projects/commercial/toyota/06.jpg", "img/projects/commercial/toyota/07.jpg", "img/projects/commercial/toyota/08.jpg"]
+  },
+  {
+    "name": "Supermarket",
+    "description": {
+      "title": "Supermarket \"Magnet\"",
+      "text": "<p>XTF’s engineers and architects designed many supermarket buildings of different sizes.</p><p>The building shown on photos is Supermarket ‘Magnet’, total area is 2400 м2. Steel frame, masonry walls.</p><p>XTF developed a full set of structural documents for this building, including geological engineering.</p><p>Project was finished in 2016.</p>"
+    },
+    "preview": "img/projects/commercial/supermarket-preview.jpg",
+    "images": ["img/projects/commercial/supermarket/01.jpg", "img/projects/commercial/supermarket/02.jpg", "img/projects/commercial/supermarket/03.jpg", "img/projects/commercial/supermarket/04.jpg"]
+  }
+]
+

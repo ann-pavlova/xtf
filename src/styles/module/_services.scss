@@ -1,9 +1,0 @@
-.b-services__advantages-block {
-    @media #{$big-up} {
-        @include column(17);
-    }
-
-    @media #{$xlarge-up} {
-        @include column(11.5);
-    }
-}
