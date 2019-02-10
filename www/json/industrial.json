@@ -1,5 +1,6 @@
 [
   {
+    "eng": true,
     "name": "Meat factory",
     "description": {
       "title": "Meat processing factory",
@@ -9,6 +10,7 @@
     "images": ["img/projects/industrial/meat/01.jpg", "img/projects/industrial/meat/02.jpg", "img/projects/industrial/meat/03.jpg", "img/projects/industrial/meat/04.jpg", "img/projects/industrial/meat/05.jpg", "img/projects/industrial/meat/06.jpg", "img/projects/industrial/meat/07.jpg", "img/projects/industrial/meat/08.jpg", "img/projects/industrial/meat/09.jpg", "img/projects/industrial/meat/10.jpg", "img/projects/industrial/meat/11.jpg"]
   },
   {
+    "eng": true,
     "name": "Warehouse",
     "description": {
       "title": "Warehouse",

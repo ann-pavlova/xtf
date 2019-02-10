@@ -1,5 +1,6 @@
 [
   {
+    "eng": true,
     "name": "Avant-garde",
     "description": {
       "title": "Residential complex \"Avant-garde\"",
@@ -10,6 +11,7 @@
     "images": ["img/projects/residential/avant-garde/01.jpg", "img/projects/residential/avant-garde/02.jpg", "img/projects/residential/avant-garde/03.jpg", "img/projects/residential/avant-garde/04.jpg", "img/projects/residential/avant-garde/05.jpg", "img/projects/residential/avant-garde/05.jpg", "img/projects/residential/avant-garde/06.jpg", "img/projects/residential/avant-garde/07.jpg", "img/projects/residential/avant-garde/08.jpg", "img/projects/residential/avant-garde/09.jpg"]
   },
   {
+    "eng": true,
     "name": "FIVE CAPITALS",
     "description": {
       "title": "Residential and commercial complex \"FIVE CAPITALS\"",
@@ -20,6 +22,7 @@
     "images": ["img/projects/residential/five-capitals/01.jpg", "img/projects/residential/five-capitals/02.jpg", "img/projects/residential/five-capitals/04.jpg", "img/projects/residential/five-capitals/05.jpg", "img/projects/residential/five-capitals/05.jpg", "img/projects/residential/five-capitals/06.jpg", "img/projects/residential/five-capitals/07.jpg", "img/projects/residential/five-capitals/08.jpg", "img/projects/residential/five-capitals/09.jpg"]
   },
   {
+    "eng": true,
     "name": "Paris",
     "description": {
       "title": "Residential complex \"Paris\"",
@@ -30,6 +33,7 @@
     "images": ["img/projects/residential/paris/01.jpg", "img/projects/residential/paris/02.jpg", "img/projects/residential/paris/03.jpg", "img/projects/residential/paris/04.jpg", "img/projects/residential/paris/05.jpg", "img/projects/residential/paris/06.jpg", "img/projects/residential/paris/07.jpg", "img/projects/residential/paris/08.jpg", "img/projects/residential/paris/09.jpg", "img/projects/residential/paris/10.jpg", "img/projects/residential/paris/11.jpg"]
   },
   {
+    "eng": true,
     "name": "Grand-prix",
     "description": {
       "title": "Residential complex \"Grand-Prix\"",

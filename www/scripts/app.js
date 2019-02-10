@@ -1,11 +1,13 @@
 'use strict';
 
+// import PerfectScrollbar from 'perfect-scrollbar';
+
 var albums = void 0;
 var albumsTemplate = void 0;
 var popupTemplate = void 0;
 var popupContentTemplate = void 0;
 
-var hbsUrl = 'http://localhost:63342/xtf(dev)/www/hbs/';
+var hbsUrl = 'http://localhost:8080/hbs/';
 
 $(function () {
     //init gallery

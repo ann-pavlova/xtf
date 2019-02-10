@@ -8,7 +8,7 @@
     z-index: -1;
     
     @media #{$big-up} {
-        height: 100vh;
+        height: 100%;
     }
 }
 
@@ -19,22 +19,19 @@
     @include padding-trailer(4);
     
     @media #{$medium-up} {
-        position: absolute;
-        top: 40%;
-        transform: translateY(-40%);
+        @include padding-leader(5);
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(6);
     }
     
     @media #{$large-up} {
+        @include padding-leader(3);
         @include margin-leader(3);
-        @include push(5);
-        @include post(4);
-        top: 43%;
-    }
-
-    @media #{$xlarge-up} {
-        @include push(7);
+        @include push(6.5);
         @include post(5);
-        top: 40%;
+        //top: 43%;
     }
 
     h1 {

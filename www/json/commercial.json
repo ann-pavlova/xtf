@@ -1,5 +1,6 @@
 [
   {
+    "eng": true,
     "name": "Lexus",
     "description": {
       "title": "Official dealer centre for the sale and maintenance of Lexus cars.",
@@ -9,6 +10,7 @@
     "images": ["img/projects/commercial/lexus/01.jpg", "img/projects/commercial/lexus/02.jpg", "img/projects/commercial/lexus/03.jpg", "img/projects/commercial/lexus/04.jpg", "img/projects/commercial/lexus/05.jpg", "img/projects/commercial/lexus/06.jpg", "img/projects/commercial/lexus/07.jpg", "img/projects/commercial/lexus/08.jpg"]
   },
   {
+    "eng": true,
     "name": "Toyota",
     "description": {
       "title": "Official dealer centre for the sale and maintenance of Toyota cars.",
@@ -18,6 +20,7 @@
     "images": ["img/projects/commercial/toyota/01.jpg", "img/projects/commercial/toyota/02.jpg", "img/projects/commercial/toyota/04.jpg", "img/projects/commercial/toyota/05.jpg", "img/projects/commercial/toyota/05.jpg", "img/projects/commercial/toyota/06.jpg", "img/projects/commercial/toyota/07.jpg", "img/projects/commercial/toyota/08.jpg"]
   },
   {
+    "eng": true,
     "name": "Supermarket",
     "description": {
       "title": "Supermarket \"Magnet\"",

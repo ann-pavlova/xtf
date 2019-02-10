@@ -1,5 +1,6 @@
 [
   {
+    "eng": true,
     "name": "Pedestrian bridge",
     "description": {
       "title": "Pedestrian bridge",
@@ -9,6 +10,7 @@
     "images": ["img/projects/civil/bridge/01.jpg", "img/projects/civil/bridge/02.jpg", "img/projects/civil/bridge/03.jpg", "img/projects/civil/bridge/04.jpg", "img/projects/civil/bridge/05.jpg"]
   },
   {
+    "eng": true,
     "name": "underground tunnels for water supply",
     "preview": "img/projects/civil/tunnel-preview.jpg",
     "images": ["img/projects/civil/tunnel/01.jpg", "img/projects/civil/tunnel/02.jpg", "img/projects/civil/tunnel/03.jpg", "img/projects/civil/tunnel/04.jpg"]

@@ -1,9 +1,11 @@
+// import PerfectScrollbar from 'perfect-scrollbar';
+
 let albums;
 let albumsTemplate;
 let popupTemplate;
 let popupContentTemplate;
 
-let hbsUrl = 'http://localhost:63342/xtf(dev)/www/hbs/';
+let hbsUrl = 'http://localhost:8080/hbs/';
 
 $(function () {
     //init gallery
