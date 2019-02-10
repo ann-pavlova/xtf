@@ -1,5 +1,3 @@
-// import PerfectScrollbar from 'perfect-scrollbar';
-
 let albums;
 let albumsTemplate;
 let popupTemplate;

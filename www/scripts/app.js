@@ -1,7 +1,5 @@
 'use strict';
 
-// import PerfectScrollbar from 'perfect-scrollbar';
-
 var albums = void 0;
 var albumsTemplate = void 0;
 var popupTemplate = void 0;
