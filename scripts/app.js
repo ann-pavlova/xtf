@@ -7,7 +7,7 @@ var albumsTemplate = void 0;
 var popupTemplate = void 0;
 var popupContentTemplate = void 0;
 
-var hbsUrl = 'http://localhost:8080/hbs/';
+var hbsUrl = 'https://ann-pavlova.github.io/xtf/hbs/';
 
 $(function () {
     //init gallery
