@@ -8,7 +8,15 @@
         {{/each}}
         </ul>
     {{/if}}
-	<div class="b-projects__album-author-txt">We appreciate our Clients Privacy Policy and not every project can be shown in our portfolio. Projects where
-		XTF took part as a sub-contractor does not shown.
-	</div>
+	{{#if eng}}
+		<div class="b-projects__album-author-txt">
+			<p>We appreciate our Clients Privacy Policy and not every project can be shown in our portfolio.</p>
+			<p>Projects where XTF took part as a sub-contractor does not shown.</p>
+		</div>
+	{{else}}
+		<div class="b-projects__album-author-txt">
+			<p>Мы строго соблюдаем договоры об интеллектуальной собственности и, поэтому, не все объекты, в которых XTF принимали участие могут быть показаны в нашем портфолио.</p>
+			<p>Проекты, в которых XTF принимали участие как субподрядчик не показаны.</p></p>
+		</div>
+	{{/if}}
 </div>
