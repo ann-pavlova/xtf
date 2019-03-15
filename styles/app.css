@@ -1488,22 +1488,22 @@ img.mfp-img {
   box-sizing: border-box; }
   @media only screen and (min-width: 1280px) {
     .b-projects__tabs_lang_ru {
-      -ms-flex-preferred-size: 61.11111%;
-      flex-basis: 61.11111%;
-      max-width: 61.11111%;
+      -ms-flex-preferred-size: 66.66667%;
+      flex-basis: 66.66667%;
+      max-width: 66.66667%;
       -ms-flex-positive: 1;
       flex-grow: 1;
       box-sizing: border-box;
       margin-left: 38.88889%; } }
   @media only screen and (min-width: 1440px) {
     .b-projects__tabs_lang_ru {
-      -ms-flex-preferred-size: 44.44444%;
-      flex-basis: 44.44444%;
-      max-width: 44.44444%;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
       -ms-flex-positive: 1;
       flex-grow: 1;
       box-sizing: border-box;
-      margin-left: 55.55556%; } }
+      margin-left: 50%; } }
 
 .b-projects__album-overlay {
   padding-left: 5.55556%;
