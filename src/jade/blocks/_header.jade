@@ -16,9 +16,9 @@ include ../mixins/_svg-sprite
                                     li.b-header__menu-item
                                         a.b-header__menu-link(href="./" + item + ".html")= item
                 .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
-                    a.b-header__lang(href="./ru/" + current + ".html") ru
-                    .b-header__lang-slash /
                     .b-header__lang.is-active eng
+                    .b-header__lang-slash /
+                    a.b-header__lang(href="./ru/" + current + ".html") ru
                 .b-header__contact-info
                     a(href="mailto:xtf@gmail.com") xtf@gmail.com
                     a(href="tel:+61414084941") +6(141) 408 49 41
@@ -39,9 +39,9 @@ include ../mixins/_svg-sprite
                                         a.b-header__menu-link(href="./" + item + ".html")= item
                 .b-header__mobile-menu-info
                     .b-header__langs(class=pageHome === true ? "b-header__langs_page_home":"")
-                        a.b-header__lang(href="./ru/" + current + ".html") ru
-                        .b-header__lang-slash /
                         .b-header__lang.is-active eng
+                        .b-header__lang-slash /
+                        a.b-header__lang(href="./ru/" + current + ".html") ru
                     .b-header__contact-info
                         a(mailto="xtf@gmail.com") xtf@gmail.com
                         a(href="tel:+61414084941") +6(141) 408 49 41

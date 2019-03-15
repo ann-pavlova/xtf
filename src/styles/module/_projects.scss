@@ -22,14 +22,15 @@
 .b-projects__tabs_lang_ru {
     @include column(36);
 
+
     @media #{$large-up} {
-        @include column(22);
+        @include column(24);
         @include push(14);
     }
 
     @media #{$xlarge-up} {
-        @include column(16);
-        @include push(20);
+        @include column(18);
+        @include push(18);
     }
 }
 
