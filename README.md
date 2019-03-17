@@ -1,7 +1,7 @@
 # xtf
 Демо: https://ann-pavlova.github.io/xtf/index.html
 
-[![xtf](https://i.imgur.com/wTpjrqv.png)](https://ann-pavlova.github.io/xtf/index.html)
+[![xtf](https://i.imgur.com/wTpjrqv.png)](https://xtf-engineering.com/)
 
 Сайт создан для компании, которая занимается проектированием и строительством различных типов зданий и сооружений. Сайт полностью адаптивен и поддерживает все современные браузеры.
 
