@@ -5,7 +5,7 @@ var albumsTemplate = void 0;
 var popupTemplate = void 0;
 var popupContentTemplate = void 0;
 
-var hbsUrl = 'https://ann-pavlova.github.io/xtf/hbs/';
+var hbsUrl = 'https://xtf-engineering.com/hbs/';
 
 $(function () {
     //init gallery
