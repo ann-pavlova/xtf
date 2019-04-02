@@ -54,7 +54,7 @@
     }
 
     @media #{$xlarge-up} {
-        @include post(11);
+        @include post(9);
         @include column(13);
     }
 }
@@ -124,8 +124,16 @@
 }
 
 .b-header__contact-info {
-    @include column(3);
+    @include column(6);
     text-align: right;
+
+    @media #{$large-up} {
+        font-size: 15px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 18px;
+    }
 
     a {
         display: inline-block;
@@ -219,7 +227,7 @@
 
 .b-header_type_desk {
     display: none;
-    
+
     @media #{$large-up} {
         display: block;
     }
@@ -280,6 +288,16 @@
 .b-header__langs {
     display: flex;
     color: $gray;
+
+    @media #{$large-up} {
+        font-size: 15px;
+        @include post(1);
+    }
+
+    @media #{$xlarge-up} {
+        @include post(0);
+        font-size: 18px;
+    }
 
     .b-header__lang-slash {
         color: rgba($gray, .5);
