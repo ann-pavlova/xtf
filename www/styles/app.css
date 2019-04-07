@@ -260,10 +260,6 @@ a {
   a[href^='tel:'], a[href^='mailto:'] {
     white-space: nowrap; }
 
-ul {
-  margin: 0;
-  padding: 0; }
-
 button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -1040,6 +1036,10 @@ img.mfp-img {
 
 .b-page__subttl {
   color: rgba(52, 52, 52, 0.7); }
+
+.b-page__list {
+  margin: 0;
+  padding: 0; }
 
 .b-page__list-item {
   display: -ms-flexbox;

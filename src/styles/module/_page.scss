@@ -69,6 +69,11 @@
     color: rgba($gray, .7);
 }
 
+.b-page__list {
+    margin: 0;
+    padding: 0;
+}
+
 .b-page__list-item {
     display: flex;
     margin-bottom: 10px;
