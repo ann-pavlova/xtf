@@ -708,7 +708,7 @@ img.mfp-img {
     .b-header__contact-info {
       font-size: 18px; } }
   .b-header__contact-info a {
-    display: inline-block; }
+    display: block; }
 
 .b-header__wrapper_type_home {
   width: 100%;
@@ -1036,6 +1036,18 @@ img.mfp-img {
 
 .b-page__subttl {
   color: rgba(52, 52, 52, 0.7); }
+
+.b-page__list {
+  margin: 0;
+  padding: 0; }
+
+.b-page__list-item {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px; }
+  .b-page__list-item a {
+    display: block; }
 
 .b-page__logo_theme_light {
   fill: #f8f5f5; }
