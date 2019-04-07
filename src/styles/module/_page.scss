@@ -69,6 +69,16 @@
     color: rgba($gray, .7);
 }
 
+.b-page__list-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    a {
+        display: block;
+    }
+}
+
 //home page
 .b-page__logo_theme_light {
     fill: $lightGray;
